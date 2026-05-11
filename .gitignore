@@ -1,0 +1,25 @@
+# Secrets & credentials
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+
+# Databases
+*.sqlite
+*.db
+data/
+
+# Build artifacts
+.next/
+dist/
+build/
+node_modules/
+
+# macOS
+.DS_Store
+._*
+
+# Logs
+*.log

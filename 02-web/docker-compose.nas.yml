@@ -1,0 +1,23 @@
+services:
+  worklog:
+    build: .
+    container_name: worklog
+    restart: unless-stopped
+    ports:
+      - "3010:3000"
+    volumes:
+      - ./data:/app/data
+    user: root
+    environment:
+      - NODE_ENV=production
+      - TZ=Asia/Taipei
+      - PROXYCLI_URL=http://ai-proxy:8080
+      - PROXYCLI_TOKEN=${PROXYCLI_TOKEN}
+      - LOG_API_KEY=${LOG_API_KEY}
+      - DATA_DIR=/app/data
+    networks:
+      - deploy-nas_default
+
+networks:
+  deploy-nas_default:
+    external: true

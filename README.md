@@ -18,3 +18,26 @@ cd 02-web
 npm install
 npm run dev
 ```
+
+---
+
+## English
+
+An AI-written work journal. Claude Code appends entries via CLI throughout the day; the web UI generates a one-click summary of everything you shipped.
+
+### Features
+- Claude Code writes entries directly via API
+- Each work session auto-creates an entry under today's date
+- Browse all entries on the web, grouped by date
+- One-click "Summarize": rolls the day's entries into a single work-summary document
+
+### Tech stack
+- Next.js 15 + TypeScript
+- Deployed at worklog.looptw.com
+
+### Quick start
+```bash
+cd 02-web
+npm install
+npm run dev
+```
